@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: "Lexend", sans-serif;
+}
+
+.output-wrap {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.output-wrap input {
+  flex-basis: 70%;
+  height: 48px;
+  border-radius: 4px;
+  padding: 0px 8px;
+}
+
+.output-wrap button {
+  flex-basis: 15%;
+}
+
+.ed-btn {
+  background: aquamarine;
+  border-radius: 4px;
+}
+
+.del-btn {
+  background: brown;
+  color: #fff;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 580px) {
+  .output-wrap {
+    flex-direction: column;
+  }
+  .output-wrap input {
+    padding: 12px 8px;
+  }
+  .output-wrap button {
+    padding: 12px 8px;
+  }
+}

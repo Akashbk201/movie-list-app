@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+</head>
+
+<body class="bg-purple-200">
+
+    <section class="container m-auto px-8 py-4">
+        <div class="w-full lg:w-3/5 xl:w-2/5 m-auto px-8 py-8 bg-green-300 border-2 border-black rounded-xl">
+            <h2 class="block text-center text-3xl font-bold mb-4">Movie List App</h2>
+
+            <div class="bg-white px-3 py-6">
+
+                <input class="w-full border-gray-300 border-[1px] h-11 px-2 mb-2" type="text"
+                    placeholder="Enter Your Task" value="" id="get-input">
+                <br><br>
+                <button id="submit-btn" onclick="getValue()"
+                    class="inline-block text-lg font-medium bg-slate-900 text-gray-100 px-11 py-1.5">Submit</button>
+
+            </div>
+
+            <div class="bg-emerald-950 mt-12 p-6">
+                <h3 class="block text-center text-xl font-bold mb-4 text-yellow-100">Your List</h3>
+                <div id="outputs">
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
